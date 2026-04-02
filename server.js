@@ -9,7 +9,7 @@ api.get('/', (req, res) => {
 });
 
 api.get('/api', (req, res) => {
-  res.json({ mensagem: 'hello world!' funciona: 'backend rodando...' })
+  res.json({ mensagem: 'hello world!', funciona: 'backend rodando...' })
 })
 
 const PORT = process.env.PORT || 3000;
