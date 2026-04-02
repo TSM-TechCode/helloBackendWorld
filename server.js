@@ -4,11 +4,11 @@ const app = express();
 
 app.use(express.json());
 
-api.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('hello world. Backend rodando 🚀');
 });
 
-api.get('/api', (req, res) => {
+app.get('/api', (req, res) => {
   res.json({ mensagem: 'hello world!', funciona: 'backend rodando...' })
 })
 
